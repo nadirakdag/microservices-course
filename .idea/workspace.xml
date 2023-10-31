@@ -4,10 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a5bdbe6c-2722-46ad-adfa-b80c48711f84" name="Changes" comment="fraud">
-      <change afterPath="$PROJECT_DIR$/docker-compose.yaml" afterDir="false" />
+    <list default="true" id="a5bdbe6c-2722-46ad-adfa-b80c48711f84" name="Changes" comment="added docker-compose">
+      <change afterPath="$PROJECT_DIR$/clients/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clients/src/main/java/dev/nadirakdag/clients/fraud/FraudCheckResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clients/src/main/java/dev/nadirakdag/clients/fraud/FraudClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +21,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -55,6 +59,11 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="dev.nadirakdag.clients.fraud" />
+    </key>
+  </component>
   <component name="RunManager" selected="Spring Boot.FraudApplication">
     <configuration name="CustomerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="customer" />
@@ -111,7 +120,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1698771741026</updated>
-      <workItem from="1698771742057" duration="2312000" />
+      <workItem from="1698771742057" duration="2996000" />
     </task>
     <task id="LOCAL-00001" summary="initial">
       <option name="closed" value="true" />
@@ -145,7 +154,23 @@
       <option name="project" value="LOCAL" />
       <updated>1698773575955</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="customer properties">
+      <option name="closed" value="true" />
+      <created>1698774102561</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1698774102561</updated>
+    </task>
+    <task id="LOCAL-00006" summary="added docker-compose">
+      <option name="closed" value="true" />
+      <created>1698774111776</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1698774111776</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -156,6 +181,8 @@
     <MESSAGE value="customer" />
     <MESSAGE value="eureka-server" />
     <MESSAGE value="fraud" />
-    <option name="LAST_COMMIT_MESSAGE" value="fraud" />
+    <MESSAGE value="customer properties" />
+    <MESSAGE value="added docker-compose" />
+    <option name="LAST_COMMIT_MESSAGE" value="added docker-compose" />
   </component>
 </project>
