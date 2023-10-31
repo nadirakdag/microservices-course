@@ -1,5 +1,6 @@
 package dev.nadirakdag.fraudcheckhistory;
 
+import dev.nadirakdag.clients.fraud.FraudCheckResponse;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 

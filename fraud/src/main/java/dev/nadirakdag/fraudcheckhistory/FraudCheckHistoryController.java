@@ -1,5 +1,6 @@
 package dev.nadirakdag.fraudcheckhistory;
 
+import dev.nadirakdag.clients.fraud.FraudCheckResponse;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.GetMapping;
