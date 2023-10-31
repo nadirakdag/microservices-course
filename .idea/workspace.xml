@@ -4,16 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a5bdbe6c-2722-46ad-adfa-b80c48711f84" name="Changes" comment="client module">
+    <list default="true" id="a5bdbe6c-2722-46ad-adfa-b80c48711f84" name="Changes" comment="used client module inside of customer and fraud">
+      <change afterPath="$PROJECT_DIR$/clients/src/main/java/dev/nadirakdag/clients/notification/NotificationClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clients/src/main/java/dev/nadirakdag/clients/notification/NotificationRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification/src/main/java/dev/nadirakdag/NotificationApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification/src/main/java/dev/nadirakdag/notification/Notification.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification/src/main/java/dev/nadirakdag/notification/NotificationController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification/src/main/java/dev/nadirakdag/notification/NotificationRespository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification/src/main/java/dev/nadirakdag/notification/NotificationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/customer/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/src/main/java/dev/nadirakdag/CustomerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/main/java/dev/nadirakdag/CustomerApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/src/main/java/dev/nadirakdag/config/CustomerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/main/java/dev/nadirakdag/config/CustomerConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/src/main/java/dev/nadirakdag/customer/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/main/java/dev/nadirakdag/customer/CustomerController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/customer/src/main/java/dev/nadirakdag/customer/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/main/java/dev/nadirakdag/customer/CustomerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/src/main/java/dev/nadirakdag/fraudstercheck/FraudCheckResponse.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fraud/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/fraud/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fraud/src/main/java/dev/nadirakdag/fraudcheckhistory/FraudCheckHistoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/fraud/src/main/java/dev/nadirakdag/fraudcheckhistory/FraudCheckHistoryController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fraud/src/main/java/dev/nadirakdag/fraudcheckhistory/FraudCheckHistoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/fraud/src/main/java/dev/nadirakdag/fraudcheckhistory/FraudCheckHistoryService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fraud/src/main/java/dev/nadirakdag/fraudcheckhistory/FraudCheckResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,11 +113,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="NotificationApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="notification" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="dev.nadirakdag.NotificationApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dev.nadirakdag.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.CustomerApplication" />
-        <item itemvalue="Spring Boot.EurekaServerApplication" />
+        <item itemvalue="Spring Boot.NotificationApplication" />
         <item itemvalue="Spring Boot.FraudApplication" />
+        <item itemvalue="Spring Boot.EurekaServerApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -124,7 +144,7 @@
       <option name="presentableId" value="Default" />
       <updated>1698771741026</updated>
       <workItem from="1698771742057" duration="3566000" />
-      <workItem from="1698780948447" duration="430000" />
+      <workItem from="1698780948447" duration="2363000" />
     </task>
     <task id="LOCAL-00001" summary="initial">
       <option name="closed" value="true" />
@@ -182,7 +202,15 @@
       <option name="project" value="LOCAL" />
       <updated>1698780472740</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="used client module inside of customer and fraud">
+      <option name="closed" value="true" />
+      <created>1698781459519</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1698781459519</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -196,6 +224,7 @@
     <MESSAGE value="customer properties" />
     <MESSAGE value="added docker-compose" />
     <MESSAGE value="client module" />
-    <option name="LAST_COMMIT_MESSAGE" value="client module" />
+    <MESSAGE value="used client module inside of customer and fraud" />
+    <option name="LAST_COMMIT_MESSAGE" value="used client module inside of customer and fraud" />
   </component>
 </project>

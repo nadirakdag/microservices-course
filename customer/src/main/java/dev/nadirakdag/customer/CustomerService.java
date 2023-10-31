@@ -2,6 +2,8 @@ package dev.nadirakdag.customer;
 
 import dev.nadirakdag.clients.fraud.FraudCheckResponse;
 import dev.nadirakdag.clients.fraud.FraudClient;
+import dev.nadirakdag.clients.notification.NotificationClient;
+import dev.nadirakdag.clients.notification.NotificationRequest;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -11,6 +13,7 @@ public class CustomerService {
 
     private final CustomerRepository customerRepository;
     private final FraudClient fraudClient;
+    private final NotificationClient notificationClient;
 
 
     public void registerCustomer(CustomerRequestModel requestModel){
@@ -32,6 +35,6 @@ public class CustomerService {
             throw new IllegalStateException("fraudster");
         }
 
-        // todo: send notification
+        notificationClient.sendNotification(new NotificationRequest(customer.getId(), customer.getEmail(), "Your account created"));
     }
 }
