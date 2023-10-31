@@ -4,22 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a5bdbe6c-2722-46ad-adfa-b80c48711f84" name="Changes" comment="used client module inside of customer and fraud">
-      <change afterPath="$PROJECT_DIR$/clients/src/main/java/dev/nadirakdag/clients/notification/NotificationClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clients/src/main/java/dev/nadirakdag/clients/notification/NotificationRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notification/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notification/src/main/java/dev/nadirakdag/NotificationApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notification/src/main/java/dev/nadirakdag/notification/Notification.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notification/src/main/java/dev/nadirakdag/notification/NotificationController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notification/src/main/java/dev/nadirakdag/notification/NotificationRespository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notification/src/main/java/dev/nadirakdag/notification/NotificationService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notification/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/src/main/java/dev/nadirakdag/config/CustomerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/main/java/dev/nadirakdag/config/CustomerConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/src/main/java/dev/nadirakdag/customer/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/main/java/dev/nadirakdag/customer/CustomerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/src/main/java/dev/nadirakdag/customer/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/main/java/dev/nadirakdag/customer/CustomerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    <list default="true" id="a5bdbe6c-2722-46ad-adfa-b80c48711f84" name="Changes" comment="notification service added and implemented at customer service">
+      <change beforePath="$PROJECT_DIR$/clients/src/main/java/dev/nadirakdag/clients/notification/NotificationClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/clients/src/main/java/dev/nadirakdag/clients/notification/NotificationClient.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -144,7 +130,7 @@
       <option name="presentableId" value="Default" />
       <updated>1698771741026</updated>
       <workItem from="1698771742057" duration="3566000" />
-      <workItem from="1698780948447" duration="2363000" />
+      <workItem from="1698780948447" duration="2603000" />
     </task>
     <task id="LOCAL-00001" summary="initial">
       <option name="closed" value="true" />
@@ -210,7 +196,15 @@
       <option name="project" value="LOCAL" />
       <updated>1698781459519</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="notification service added and implemented at customer service">
+      <option name="closed" value="true" />
+      <created>1698783524937</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1698783524937</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -225,6 +219,7 @@
     <MESSAGE value="added docker-compose" />
     <MESSAGE value="client module" />
     <MESSAGE value="used client module inside of customer and fraud" />
-    <option name="LAST_COMMIT_MESSAGE" value="used client module inside of customer and fraud" />
+    <MESSAGE value="notification service added and implemented at customer service" />
+    <option name="LAST_COMMIT_MESSAGE" value="notification service added and implemented at customer service" />
   </component>
 </project>
