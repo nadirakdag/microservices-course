@@ -1,9 +1,11 @@
 package dev.nadirakdag.customer;
 
+import dev.nadirakdag.amqp.RabbitMQMessageProducer;
 import dev.nadirakdag.clients.fraud.FraudCheckResponse;
 import dev.nadirakdag.clients.fraud.FraudClient;
 import dev.nadirakdag.clients.notification.NotificationClient;
 import dev.nadirakdag.clients.notification.NotificationRequest;
+import dev.nadirakdag.config.CustomerConfig;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -13,7 +15,8 @@ public class CustomerService {
 
     private final CustomerRepository customerRepository;
     private final FraudClient fraudClient;
-    private final NotificationClient notificationClient;
+    private final RabbitMQMessageProducer producer;
+    private final CustomerConfig customerConfig;
 
 
     public void registerCustomer(CustomerRequestModel requestModel){
@@ -35,6 +38,7 @@ public class CustomerService {
             throw new IllegalStateException("fraudster");
         }
 
-        notificationClient.sendNotification(new NotificationRequest(customer.getId(), customer.getEmail(), "Your account created"));
+        NotificationRequest notificationRequest = new NotificationRequest(customer.getId(), customer.getEmail(), "Your account created");
+        producer.publish(notificationRequest, customerConfig.getInternalExchange(), customerConfig.getInternalNotificationRoutingKey());
     }
 }

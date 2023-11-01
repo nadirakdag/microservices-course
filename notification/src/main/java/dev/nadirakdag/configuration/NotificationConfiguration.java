@@ -1,5 +1,4 @@
-package dev.nadirakdag.config;
-
+package dev.nadirakdag.configuration;
 
 import lombok.Getter;
 import org.springframework.amqp.core.Binding;
@@ -12,7 +11,7 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 @Getter
-public class CustomerConfig {
+public class NotificationConfiguration {
 
     @Value("${rabbitmq.exchange.internal}")
     private String internalExchange;
