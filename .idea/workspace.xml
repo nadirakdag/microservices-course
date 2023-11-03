@@ -4,43 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a5bdbe6c-2722-46ad-adfa-b80c48711f84" name="Changes" comment="RabbitMQ implemented on customer and notification service">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="a5bdbe6c-2722-46ad-adfa-b80c48711f84" name="Changes" comment="added packaging">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/amqp/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/amqp/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/amqp/src/main/java/dev/nadirakdag/amqp/RabbitMQMessageProducer.java" beforeDir="false" afterPath="$PROJECT_DIR$/amqp/src/main/java/dev/nadirakdag/amqp/RabbitMQMessageProducer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/amqp/src/main/java/dev/nadirakdag/amqp/configuration/RabbitMQConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/amqp/src/main/java/dev/nadirakdag/amqp/configuration/RabbitMQConfiguration.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apigw/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/apigw/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apigw/src/main/java/dev/nadirakdag/ApiGatewayApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/apigw/src/main/java/dev/nadirakdag/ApiGatewayApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apigw/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/apigw/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clients/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/clients/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clients/src/main/java/dev/nadirakdag/clients/fraud/FraudClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/clients/src/main/java/dev/nadirakdag/clients/fraud/FraudClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clients/src/main/java/dev/nadirakdag/clients/notification/NotificationClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/clients/src/main/java/dev/nadirakdag/clients/notification/NotificationClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clients/src/main/java/dev/nadirakdag/clients/notification/NotificationRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/clients/src/main/java/dev/nadirakdag/clients/notification/NotificationRequest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/customer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/customer/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/src/main/java/dev/nadirakdag/CustomerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/main/java/dev/nadirakdag/CustomerApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/src/main/java/dev/nadirakdag/config/CustomerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/main/java/dev/nadirakdag/config/CustomerConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/eureka-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-server/src/main/java/dev/nadirakdag/EurekaServerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server/src/main/java/dev/nadirakdag/EurekaServerApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-server/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fraud/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/fraud/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fraud/src/main/java/dev/nadirakdag/FraudApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/fraud/src/main/java/dev/nadirakdag/FraudApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fraud/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/fraud/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/notification/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/notification/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notification/src/main/java/dev/nadirakdag/NotificationApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/notification/src/main/java/dev/nadirakdag/NotificationApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notification/src/main/java/dev/nadirakdag/configuration/NotificationConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/notification/src/main/java/dev/nadirakdag/configuration/NotificationConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notification/src/main/java/dev/nadirakdag/notification/Notification.java" beforeDir="false" afterPath="$PROJECT_DIR$/notification/src/main/java/dev/nadirakdag/notification/Notification.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notification/src/main/java/dev/nadirakdag/notification/NotificationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/notification/src/main/java/dev/nadirakdag/notification/NotificationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notification/src/main/java/dev/nadirakdag/notification/NotificationRespository.java" beforeDir="false" afterPath="$PROJECT_DIR$/notification/src/main/java/dev/nadirakdag/notification/NotificationRespository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notification/src/main/java/dev/nadirakdag/notification/NotificationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/notification/src/main/java/dev/nadirakdag/notification/NotificationService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notification/src/main/java/dev/nadirakdag/rabbitmq/NotificationConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/notification/src/main/java/dev/nadirakdag/rabbitmq/NotificationConsumer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notification/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/notification/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -58,6 +29,13 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="enabledProfiles">
+      <list>
+        <option value="build-docker-image" />
+      </list>
+    </option>
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
@@ -198,7 +176,7 @@
       <workItem from="1698780948447" duration="2603000" />
       <workItem from="1698870323968" duration="342000" />
       <workItem from="1698923454441" duration="236000" />
-      <workItem from="1698923741488" duration="744000" />
+      <workItem from="1698923741488" duration="4660000" />
     </task>
     <task id="LOCAL-00001" summary="initial">
       <option name="closed" value="true" />
@@ -304,7 +282,15 @@
       <option name="project" value="LOCAL" />
       <updated>1698869978262</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="added packaging">
+      <option name="closed" value="true" />
+      <created>1698925064208</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1698925064208</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -324,6 +310,7 @@
     <MESSAGE value="api gateway added" />
     <MESSAGE value="rabbitmq added to docker-compose.yaml" />
     <MESSAGE value="RabbitMQ implemented on customer and notification service" />
-    <option name="LAST_COMMIT_MESSAGE" value="RabbitMQ implemented on customer and notification service" />
+    <MESSAGE value="added packaging" />
+    <option name="LAST_COMMIT_MESSAGE" value="added packaging" />
   </component>
 </project>
