@@ -34,6 +34,8 @@ services:
     container_name: zipkin
     ports:
       - 9411:9411
+    networks:
+      - zipkin
 
   rabbitmq:
     image: rabbitmq:3.9.11-management-alpine
@@ -41,9 +43,87 @@ services:
     ports:
       - 5672:5672
       - 15672:15672
+    networks:
+      - rabbitmq
+
+  eureka-server:
+    image: nadirakdag/eureka-server:latest
+    container_name: eureka-server
+    ports:
+      - 8761:8761
+    depends_on:
+      - zipkin
+    networks:
+      - spring
+
+  api-gateway:
+    image: nadirakdag/apigw:latest
+    container_name: api-gateway
+    environment:
+      - SPRING_PROFILES_ACTIVE=docker
+    ports:
+      - 8083:8083
+    depends_on:
+      - eureka-server
+      - zipkin
+    networks:
+      - spring
+      - zipkin
+
+  customer:
+    image: nadirakdag/customer:latest
+    container_name: customer-service
+    environment:
+      - SPRING_PROFILES_ACTIVE=docker
+    depends_on:
+      - eureka-server
+      - api-gateway
+      - postgres
+      - rabbitmq
+    networks:
+      - spring
+      - postgres
+      - rabbitmq
+      - zipkin
+
+  fraud:
+    image: nadirakdag/fraud:latest
+    container_name: fraud-service
+    environment:
+      - SPRING_PROFILES_ACTIVE=docker
+    depends_on:
+      - eureka-server
+      - api-gateway
+      - postgres
+    networks:
+      - spring
+      - postgres
+      - zipkin
+
+  notification:
+    image: nadirakdag/notification:latest
+    container_name: notification-service
+    environment:
+      - SPRING_PROFILES_ACTIVE=docker
+    depends_on:
+      - eureka-server
+      - api-gateway
+      - postgres
+      - rabbitmq
+    networks:
+      - spring
+      - postgres
+      - rabbitmq
+      - zipkin
 
 networks:
+  rabbitmq:
+    driver: bridge
   postgres:
+    driver: bridge
+  spring:
+    driver: bridge
+  zipkin:
     driver: bridge
 
 volumes:
