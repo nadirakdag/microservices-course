@@ -4,28 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a5bdbe6c-2722-46ad-adfa-b80c48711f84" name="Changes" comment="added zipkin, postgres and rabbitmq kubernetes services">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="a5bdbe6c-2722-46ad-adfa-b80c48711f84" name="Changes" comment="removed eureka-server">
+      <change afterPath="$PROJECT_DIR$/k8s/minikube/services/customer/deployment.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/k8s/minikube/services/customer/service.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/k8s/minikube/services/fraud/deployment.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/k8s/minikube/services/fraud/service.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/k8s/minikube/services/notification/deployment.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/k8s/minikube/services/notification/service.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clients/src/main/java/dev/nadirakdag/clients/fraud/FraudClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/clients/src/main/java/dev/nadirakdag/clients/fraud/FraudClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clients/src/main/java/dev/nadirakdag/clients/notification/NotificationClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/clients/src/main/java/dev/nadirakdag/clients/notification/NotificationClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/customer/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/src/main/java/dev/nadirakdag/CustomerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/main/java/dev/nadirakdag/CustomerApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/customer/src/main/resources/application-docker.properties" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/main/resources/application-docker.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-server/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-server/src/main/java/dev/nadirakdag/EurekaServerApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-server/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fraud/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/fraud/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fraud/src/main/java/dev/nadirakdag/FraudApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/fraud/src/main/java/dev/nadirakdag/FraudApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fraud/src/main/resources/application-docker.properties" beforeDir="false" afterPath="$PROJECT_DIR$/fraud/src/main/resources/application-docker.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fraud/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/fraud/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notification/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/notification/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notification/src/main/java/dev/nadirakdag/NotificationApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/notification/src/main/java/dev/nadirakdag/NotificationApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notification/src/main/resources/application-docker.properties" beforeDir="false" afterPath="$PROJECT_DIR$/notification/src/main/resources/application-docker.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notification/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/notification/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -196,7 +183,7 @@
       <workItem from="1698780948447" duration="2603000" />
       <workItem from="1698870323968" duration="342000" />
       <workItem from="1698923454441" duration="236000" />
-      <workItem from="1698923741488" duration="16791000" />
+      <workItem from="1698923741488" duration="19013000" />
     </task>
     <task id="LOCAL-00001" summary="initial">
       <option name="closed" value="true" />
@@ -334,7 +321,15 @@
       <option name="project" value="LOCAL" />
       <updated>1699185222725</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="removed eureka-server">
+      <option name="closed" value="true" />
+      <created>1699192359260</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1699192359260</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -369,6 +364,7 @@
     <MESSAGE value="jib packing implemented" />
     <MESSAGE value="added services to docker-compose.yaml and created properties files on the services" />
     <MESSAGE value="added zipkin, postgres and rabbitmq kubernetes services" />
-    <option name="LAST_COMMIT_MESSAGE" value="added zipkin, postgres and rabbitmq kubernetes services" />
+    <MESSAGE value="removed eureka-server" />
+    <option name="LAST_COMMIT_MESSAGE" value="removed eureka-server" />
   </component>
 </project>

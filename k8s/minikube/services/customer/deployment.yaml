@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: customer-deployment
+  labels:
+    app: customer-service
+spec:
+  replicas: 1
+  template:
+    metadata:
+      name: customer-template
+      labels:
+        app: customer-service
+    spec:
+      containers:
+        - name: customer-container
+          image: nadirakdag/customer
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 8080
+          env:
+            - name: SPRING_PROFILES_ACTIVE
+              value: docker
+            - name: clients.notification.url
+              value: http://notification
+            - name: clients.fraud.url
+              value: http://fraud
+      restartPolicy: Always
+  selector:
+    matchLabels:
+      app: customer-service

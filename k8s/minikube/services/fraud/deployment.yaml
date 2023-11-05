@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: fraud-deployment
+  labels:
+    app: fraud-service
+spec:
+  replicas: 1
+  template:
+    metadata:
+      name: fraud-template
+      labels:
+        app: fraud-service
+    spec:
+      containers:
+        - name: fraud-container
+          image: nadirakdag/fraud
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 8081
+          env:
+            - name: SPRING_PROFILES_ACTIVE
+              value: docker
+      restartPolicy: Always
+  selector:
+    matchLabels:
+      app: fraud-service
