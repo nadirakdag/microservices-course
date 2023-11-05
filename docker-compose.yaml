@@ -3,7 +3,7 @@ services:
     container_name: postgres
     image: postgres
     environment:
-      POSTGRES_USER: amigoscode
+      POSTGRES_USER: microservices-course
       POSTGRES_PASSWORD: password
       PGDATA: /data/postgres
     volumes:
@@ -46,16 +46,6 @@ services:
     networks:
       - rabbitmq
 
-  eureka-server:
-    image: nadirakdag/eureka-server:latest
-    container_name: eureka-server
-    ports:
-      - 8761:8761
-    depends_on:
-      - zipkin
-    networks:
-      - spring
-
   api-gateway:
     image: nadirakdag/apigw:latest
     container_name: api-gateway
@@ -64,7 +54,6 @@ services:
     ports:
       - 8083:8083
     depends_on:
-      - eureka-server
       - zipkin
     networks:
       - spring
@@ -75,11 +64,14 @@ services:
     container_name: customer-service
     environment:
       - SPRING_PROFILES_ACTIVE=docker
+    ports:
+      - 8080:8080
     depends_on:
-      - eureka-server
       - api-gateway
       - postgres
       - rabbitmq
+      - fraud
+      - notification
     networks:
       - spring
       - postgres
@@ -92,7 +84,6 @@ services:
     environment:
       - SPRING_PROFILES_ACTIVE=docker
     depends_on:
-      - eureka-server
       - api-gateway
       - postgres
     networks:
@@ -106,7 +97,6 @@ services:
     environment:
       - SPRING_PROFILES_ACTIVE=docker
     depends_on:
-      - eureka-server
       - api-gateway
       - postgres
       - rabbitmq

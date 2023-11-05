@@ -10,7 +10,6 @@
     <packaging>pom</packaging>
     <modules>
         <module>customer</module>
-        <module>eureka-server</module>
         <module>fraud</module>
         <module>clients</module>
         <module>notification</module>
